@@ -110,3 +110,6 @@ source $ZSH/oh-my-zsh.sh
 
 ZSH_DISABLE_COMPFIX=true
 source /home/kaotu/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# PYENV INIT
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(command pyenv init - --no-rehash zsh)"
