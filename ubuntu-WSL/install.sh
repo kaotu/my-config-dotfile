@@ -8,3 +8,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 sudo apt-get install python3-pip -y
+sudo apt-get install awscli -y
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
