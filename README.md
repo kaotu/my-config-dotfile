@@ -22,3 +22,6 @@ Install plugins
   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`</br>
 
 Add plugins to zshrc file
+
+## Plugin vim
+Ref : https://gitmemory.com/issue/junegunn/vim-plug/812/496619023
