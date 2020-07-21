@@ -8,7 +8,7 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
 
     // You can add more global application settings here.
     // To learn more about global settings, visit https://aka.ms/terminal-global-settings
@@ -36,7 +36,8 @@
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
-                "fontFace": "Space Mono for Powerline",
+                // "fontFace": "Space Mono for Powerline",
+                "fontFace": "Noto Mono for Powerline",
                 "colorScheme": "Solarized Dark Higher Contrast"
             },
             {
@@ -44,6 +45,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
+                "fontFace": "Cascadia Code PL",
                 "hidden": false,
                 "colorScheme": "OceanicMaterial"
             },
