@@ -1,13 +1,22 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-cd /mnt/
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+      source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  fi
+
+
+#cd /mnt/
+cd /home/kaotu
 alias python='python3'
 alias pip='pip3'
+alias pipenv='python -m pipenv'
+alias ssh-athena='ssh -i /mnt/d/AWS-key/AWSBuildOn2020/Athenakeypair.pem centos@54.79.108.37'
 #alias aws='aws2'
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+PIPENV_SHELL=/use/bin/zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -15,6 +24,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
+#ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -48,7 +58,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -113,3 +123,10 @@ source /home/kaotu/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # PYENV INIT
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(command pyenv init - --no-rehash zsh)"
+
+#hide the “user@hostname”
+prompt_context() {
+      if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+            #  prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+                fi
+            }
