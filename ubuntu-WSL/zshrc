@@ -12,6 +12,7 @@ alias python='python3'
 alias pip='pip3'
 alias pipenv='python -m pipenv'
 alias ssh-athena='ssh -i /mnt/d/AWS-key/AWSBuildOn2020/Athenakeypair.pem centos@54.79.108.37'
+alias rm-none-images='docker rmi $(docker images -q)'
 #alias aws='aws2'
 
 # Path to your oh-my-zsh installation.
