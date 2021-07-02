@@ -2,6 +2,10 @@
 
 ## iTerm Font
   - `MesloLGS NF`
+
+## Preferences iTerm Profile
+![image](https://user-images.githubusercontent.com/32597649/124212505-439d9c00-db19-11eb-83f0-0969b054a284.png)
+
   
 ## Setting VSCode & VIM
 
