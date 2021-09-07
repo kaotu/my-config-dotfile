@@ -2,7 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/patthraporn/.oh-my-zsh"
+export ZSH="/Users/pattharaporn/.oh-my-zsh"
+
+#alias
+alias rm-none-images='docker rmi $(docker images -q)'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,3 +112,10 @@ prompt_context() {
             #  prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
                 fi
             }
+
+
+#auto jump script
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# pyenv
+eval "$(pyenv init -)"
