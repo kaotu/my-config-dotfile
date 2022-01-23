@@ -6,6 +6,7 @@ export ZSH="/Users/pattharaporn/.oh-my-zsh"
 
 #alias
 alias rm-none-images='docker rmi $(docker images -q)'
+alias fix-lens='rm -rf ~/Library/Application\ Support/Lens/lens-local-storage/*'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,4 +119,7 @@ prompt_context() {
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # pyenv
-eval "$(pyenv init -)"
+export PATH="$(pyenv root)/shims:$PATH"
+export PATH="$(pyenv root):$PATH"
+eval "$(command pyenv init - --no-rehash zsh)"
+eval "$(pyenv virtualenv-init -)"
