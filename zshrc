@@ -123,3 +123,5 @@ export PATH="$(pyenv root)/shims:$PATH"
 export PATH="$(pyenv root):$PATH"
 eval "$(command pyenv init - --no-rehash zsh)"
 eval "$(pyenv virtualenv-init -)"
+
+eval "$(starship init zsh)"
